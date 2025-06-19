@@ -1,5 +1,6 @@
 package com.employee.deploy.dto;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
 @Getter
@@ -10,7 +11,7 @@ import lombok.*;
 public class DepartmentDto {
     private Long id;
 
-    //@NotBlank(message = "Department name cannot be blank")
+    @NotBlank(message = "Department name cannot be blank")
     private String departmentName;
 
     private String departmentDescription;
